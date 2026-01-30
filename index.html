@@ -6,7 +6,7 @@
         body {
             background: black;
             text-align: center;
-            margin-top: 80px;
+            margin-top: 40px;
         }
 
         .floating {
@@ -15,20 +15,21 @@
         }
 
         .logo {
-            width: 200px;
-            margin-bottom: 20px;
+            width: 350px; /* diperbesar */
+            margin-bottom: 30px;
         }
 
         .rainbow-blink {
-            font-size: 48px;
+            font-size: 72px; /* teks besar */
             font-weight: bold;
+            line-height: 1.1;
             animation: colorChange 1s linear infinite,
                        blink 0.8s step-start infinite;
         }
 
         @keyframes float {
             0%   { transform: translateY(0px); }
-            50%  { transform: translateY(-20px); }
+            50%  { transform: translateY(-25px); }
             100% { transform: translateY(0px); }
         }
 
@@ -52,7 +53,19 @@
 
 <div class="floating">
     <img class="logo" src="https://raw.githubusercontent.com/rajaseblak/logo/refs/heads/main/logo.png" alt="Logo Raja Seblak">
-    <div class="rainbow-blink">Raja Seblak Jatisari</div>
+
+    <div class="rainbow-blink">
+        R<br>
+        A<br>
+        J<br>
+        A<br><br>
+        S<br>
+        E<br>
+        B<br>
+        L<br>
+        A<br>
+        K
+    </div>
 </div>
 
 </body>
