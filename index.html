@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Raja Seblak Jatisari</title>
+    <title>RAJA SEBLAK JATISARI</title>
     <style>
         body {
             background: black;
             text-align: center;
-            margin-top: 50px;
+            margin-top: 80px;
+        }
+
+        .floating {
+            display: inline-block;
+            animation: float 3s ease-in-out infinite;
         }
 
         .logo {
@@ -19,6 +24,12 @@
             font-weight: bold;
             animation: colorChange 1s linear infinite,
                        blink 0.8s step-start infinite;
+        }
+
+        @keyframes float {
+            0%   { transform: translateY(0px); }
+            50%  { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
         }
 
         @keyframes colorChange {
@@ -39,9 +50,10 @@
 </head>
 <body>
 
-<img class="logo" src="https://raw.githubusercontent.com/rajaseblak/logo/refs/heads/main/logo.png" alt="Logo Raja Seblak">
-
-<div class="rainbow-blink">Raja Seblak Jatisari</div>
+<div class="floating">
+    <img class="logo" src="https://raw.githubusercontent.com/rajaseblak/logo/refs/heads/main/logo.png" alt="Logo Raja Seblak">
+    <div class="rainbow-blink">Raja Seblak Jatisari</div>
+</div>
 
 </body>
 </html>
