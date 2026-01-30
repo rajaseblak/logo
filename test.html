@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Raja Seblak Jatisari</title>
+    <style>
+        body {
+            background: black;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .rainbow-blink {
+            font-size: 48px;
+            font-weight: bold;
+            animation: colorChange 1s linear infinite,
+                       blink 0.8s step-start infinite;
+        }
+
+        @keyframes colorChange {
+            0%   { color: red; }
+            14%  { color: orange; }
+            28%  { color: yellow; }
+            42%  { color: lime; }
+            57%  { color: cyan; }
+            71%  { color: blue; }
+            85%  { color: magenta; }
+            100% { color: red; }
+        }
+
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="rainbow-blink">Raja Seblak Jatisari</div>
+
+</body>
+</html>
